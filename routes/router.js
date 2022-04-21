@@ -13,7 +13,6 @@ const {generatteToken,authenticateToken} = require('../middleware/jwt')
 
 const users = require("../db/db_model");
 
-
 // USER SIGNUP
 router.post("/signup",async(req,res)=>{
     try {
