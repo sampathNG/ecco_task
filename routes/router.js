@@ -151,7 +151,6 @@ router.get('/image/:filename',authenticateToken, (req, res) => {
 });
 
 // USER LOGOUT
-
 router.post('/logout', authenticateToken, async (req, res) => {
     try {
         req.userr.tokens = req.userr.tokens.filter((token) =>{
